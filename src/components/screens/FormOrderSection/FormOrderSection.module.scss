@@ -1,0 +1,6 @@
+.formSection {
+  background: radial-gradient(ellipse 65% 58% at 50% 55%, #B79571 0, rgba(#B79571, 0.5) 30%, #332E2A 100%);
+  @media screen and (max-width: 700px) {
+    background: transparent;
+  }
+}

@@ -1,0 +1,15 @@
+.navBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  .navItem {
+    letter-spacing: 0.1rem;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}

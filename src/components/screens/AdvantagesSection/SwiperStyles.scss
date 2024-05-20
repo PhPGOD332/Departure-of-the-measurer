@@ -1,0 +1,21 @@
+.advantages-slider {
+  display: none !important;
+
+  @media screen and (max-width: 950px) {
+    display: flex !important;
+  }
+}
+
+.swiper-pagination {
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    opacity: 0.5;
+
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+  }
+}

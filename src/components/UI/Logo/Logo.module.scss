@@ -1,0 +1,30 @@
+.logoBlock {
+  display: flex;
+  align-items: center;
+
+  .logoImg {
+    margin-right: 15px;
+  }
+
+  .logoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &:first-child {
+      margin-bottom: 5px;
+    }
+
+    .logoTitle {
+      font-family: 'GilroyBold', sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .logoSubtext {
+      font-size: 8px;
+      font-weight: normal;
+    }
+  }
+}

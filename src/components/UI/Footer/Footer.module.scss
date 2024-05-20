@@ -1,0 +1,165 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .topBlock {
+    background-color: #232120;
+    padding: 40px 0 43px;
+
+    @media screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .blockContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logoBlock {
+
+      }
+
+      .navBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 900px) {
+          margin-top: 37px;
+          margin-bottom: 53px;
+          flex-wrap: wrap;
+          gap: 30px
+        }
+
+        .navItem {
+          font-family: 'GilroyBold', sans-serif;
+          font-weight: bold;
+          opacity: 0.5;
+          transition: 0.2s;
+
+          &:not(:last-of-type) {
+            margin-right: 30px;
+
+            @media screen and (max-width: 900px) {
+              margin: 0;
+            }
+          }
+
+          &:hover {
+            opacity: 1;
+            filter: drop-shadow(0 0 12px #f28c6b)
+          }
+        }
+      }
+
+      .contactsBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 170px;
+        gap: 12px;
+
+        @media screen and (max-width: 900px) {
+          align-items: center;
+        }
+
+        .contactItem {
+          display: flex;
+          align-items: center;
+          max-height: 22px;
+
+          .contactIcon {
+            width: 51px;
+            height: 51px;
+            stroke: #fff;
+            margin-right: -5px;
+          }
+
+          .contactText {
+            font-size: 14px;
+            letter-spacing: .01rem;
+
+            &.contactPhoneText {
+              letter-spacing: .1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottomBlock {
+    background-color: #1D1B1B;
+    padding: 10px 0 13px;
+
+    .blockContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        max-width: 264px;
+        gap: 25px;
+      }
+
+      .rightsSpan {
+        font-size: 12px;
+        letter-spacing: .02rem;
+        color: #A89E94;
+
+        &.rights {
+
+          @media screen and (max-width: 900px) {
+            order: 2
+          }
+        }
+
+        &.address {
+
+          @media screen and (max-width: 900px) {
+            order: 0
+          }
+        }
+      }
+
+      .socialBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 38px;
+
+        @media screen and (max-width: 900px) {
+          order: 1
+        }
+
+        .socialItem {
+
+
+          > svg {
+
+
+            @media screen and (max-width: 900px) {
+              width: 35px;
+              height: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
