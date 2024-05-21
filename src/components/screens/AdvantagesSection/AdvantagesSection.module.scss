@@ -67,6 +67,10 @@
     }
   }
 
+  @media screen and (max-width: 950px) {
+    padding: 25px 25px 40px 25px;
+  }
+
   .advantageIconBlock {
     display: flex;
     justify-content: center;

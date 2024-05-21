@@ -1,8 +1,6 @@
 'use client'
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 import styles from './AdvantagesSection.module.scss';
-import Swiper from "swiper";
-import {SwiperOptions} from "swiper/types";
 import {Swiper as SwiperComp, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper/modules";
 import 'swiper/scss';
@@ -142,7 +140,7 @@ const AdvantagesSection: FC = () => {
                 centeredSlides={true}
             >
                 <SwiperSlide className={`${styles.advantagesItem} swiper-slide`}>
-                    <div className={`${styles.advantagesItem} swiper-slide`}>
+                    <div>
                         <div className={styles.advantageIconBlock}>
                             <svg className={styles.advantageIcon} width="40" height="40" viewBox="0 0 40 40" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +159,7 @@ const AdvantagesSection: FC = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={`${styles.advantagesItem} swiper-slide`}>
-                    <div className={`${styles.advantagesItem} swiper-slide`}>
+                    <div>
                         <div className={styles.advantageIconBlock}>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +176,7 @@ const AdvantagesSection: FC = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={`${styles.advantagesItem} swiper-slide`}>
-                    <div className={`${styles.advantagesItem} swiper-slide`}>
+                    <div>
                         <div className={styles.advantageIconBlock}>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +193,7 @@ const AdvantagesSection: FC = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={`${styles.advantagesItem} swiper-slide`}>
-                    <div className={`${styles.advantagesItem} swiper-slide`}>
+                    <div>
                         <div className={styles.advantageIconBlock}>
                             <svg width="67" height="42" viewBox="0 0 67 42" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
