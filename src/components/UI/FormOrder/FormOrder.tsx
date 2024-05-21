@@ -1,6 +1,7 @@
 'use client'
 import React, {FC, useState} from 'react';
 import styles from './FormOrder.module.scss';
+import {InputMask} from "@react-input/mask";
 
 interface FormProps {
     style?: object;
@@ -47,7 +48,7 @@ const FormOrder: FC<FormProps> =
                         </div>
                     </label>
                     <label className={styles.inputLabel} htmlFor="">
-                        <input className={styles.inputForm} type="tel" placeholder='Ваш телефон'/>
+                        <InputMask className={styles.inputForm} type="tel" mask="+7 (___) ___-__-__" replacement={{ _: /\d/ }} placeholder="Ваш телефон"/>
                         <div className={styles.inputIcon}>
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">

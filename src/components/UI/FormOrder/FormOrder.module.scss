@@ -92,140 +92,140 @@
         top: 0;
       }
     }
+  }
 
-    .formTitle {
-      margin-bottom: 40px;
-      color: #B79571;
-      text-align: center;
-      position: relative;
-      line-height: 115%;
+  .formTitle {
+    margin-bottom: 40px;
+    color: #B79571;
+    text-align: center;
+    position: relative;
+    line-height: 115%;
 
-      @media screen and (max-width: 1100px) {
-        padding-left: 50px;
-      }
-
-      @media screen and (max-width: 700px) {
-        text-align: left;
-        padding-left: 50px;
-      }
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: calc(25px);
-        left: -77px;
-        width: 36px;
-        height: 2px;
-        background-color: #191919;
-
-        @media screen and (max-width: 1100px) {
-          top: calc(20px);
-          left: 0;
-          height: 1px;
-        }
-      }
+    @media screen and (max-width: 1100px) {
+      padding-left: 50px;
     }
 
-    .inputsBlock {
-      margin-bottom: 7px;
+    @media screen and (max-width: 700px) {
+      text-align: left;
+      padding-left: 50px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc(25px);
+      left: -77px;
+      width: 36px;
+      height: 2px;
+      background-color: #191919;
+
+      @media screen and (max-width: 1100px) {
+        top: calc(20px);
+        left: 0;
+        height: 1px;
+      }
+    }
+  }
+
+  .inputsBlock {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 21px;
+
+    @media screen and (max-width: 1100px) {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      gap: 21px;
-
-      @media screen and (max-width: 1100px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .inputLabel {
-        position: relative;
-
-        @media screen and (max-width: 1100px) {
-          width: 100%;
-        }
-
-        .inputForm {
-          padding: 28px 28px 26px 35px;
-          background-color: #EEEDEA;
-          border-radius: 147px;
-          color: #4F4A46;
-          outline: none;
-          position: relative;
-          width: 262px;
-
-          &::placeholder {
-            color: #4F4A46;
-          }
-
-          @media screen and (max-width: 1100px) {
-            width: 100%;
-          }
-        }
-
-        .inputIcon {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          position: absolute;
-          right: 0;
-          left: calc(100% - 28px - 17px);
-          top: 0;
-          height: 100%;
-          z-index: 2;
-          border-top-right-radius: 147px;
-          border-bottom-right-radius: 147px;
-          background-color: #EEEDEA;
-          padding-left: 5px;
-        }
-      }
-
-      .formBtn {
-        display: inline-block;
-        padding: 27px 90px;
-        font-size: 12px;
-        width: 262px;
-
-        @media screen and (max-width: 1100px) {
-          margin: 0 auto;
-        }
-
-        @media screen and (max-width: 700px) {
-          display: block;
-          min-width: 100%;
-        }
-      }
     }
+  }
 
-    .formDiscount {
-      display: block;
-      color: #B79571;
-      font-size: 14px;
-      letter-spacing: 0.02rem;
-      margin: 0 auto;
-      text-align: center;
+  .inputLabel {
+    position: relative;
 
-      @media screen and (max-width: 700px) {
-        display: none;
-      }
+    @media screen and (max-width: 1100px) {
+      width: 100%;
     }
+  }
 
-    .formAnswer {
-      display: block;
+  .inputForm {
+    padding: 28px 28px 26px 35px;
+    background-color: #EEEDEA;
+    border-radius: 147px;
+    color: #4F4A46;
+    outline: none;
+    position: relative;
+    width: 262px;
+
+    &::placeholder {
       color: #4F4A46;
-      font-size: 16px;
-      letter-spacing: 0.02rem;
+    }
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+    }
+  }
+
+  .inputIcon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: calc(100% - 28px - 17px);
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    border-top-right-radius: 147px;
+    border-bottom-right-radius: 147px;
+    background-color: #EEEDEA;
+    padding-left: 5px;
+  }
+
+  .formBtn {
+    display: inline-block;
+    padding: 27px 90px;
+    font-size: 12px;
+    width: 262px;
+
+    @media screen and (max-width: 1100px) {
       margin: 0 auto;
-      text-align: center;
+    }
 
-      @media screen and (max-width: 700px) {
-        display: none;
-      }
+    @media screen and (max-width: 700px) {
+      display: block;
+      min-width: 100%;
+    }
+  }
 
-      > b {
-        font-family: 'GilroyBold', sans-serif;
-      }
+  .formDiscount {
+    display: block;
+    color: #B79571;
+    font-size: 14px;
+    letter-spacing: 0.02rem;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  .formAnswer {
+    display: block;
+    color: #4F4A46;
+    font-size: 16px;
+    letter-spacing: 0.02rem;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+
+    > b {
+      font-family: 'GilroyBold', sans-serif;
     }
   }
 }

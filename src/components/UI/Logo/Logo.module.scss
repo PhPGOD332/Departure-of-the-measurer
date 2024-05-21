@@ -1,6 +1,11 @@
 .logoBlock {
   display: flex;
   align-items: center;
+  max-width: 140px;
+
+  @media screen and (max-width: 1100px) {
+    max-width: 150px;
+  }
 
   .logoImg {
     margin-right: 15px;
