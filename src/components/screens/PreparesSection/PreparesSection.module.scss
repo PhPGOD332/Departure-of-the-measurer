@@ -1,6 +1,10 @@
 .preparesSection {
   z-index: 2;
 
+  @media screen and (max-width: 950px) {
+    margin-bottom: 300px;
+  }
+
   .preparesCard {
     border-radius: 12px;
     background-color: #332E2A;

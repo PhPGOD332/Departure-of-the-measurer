@@ -1,5 +1,5 @@
 'use client'
-import React, {FC, useEffect, useRef, useState} from 'react';
+import React, {FC, useState} from 'react';
 import styles from './Measures.module.scss';
 import {Swiper} from 'swiper';
 import {Swiper as SwiperComp, SwiperSlide} from "swiper/react";
@@ -25,6 +25,7 @@ const MeasuresScreen: FC = () => {
             <div className={`${styles.measureCard} gridBlock`}>
                 <div className={styles.slider}>
                     <SwiperComp
+                        loop={true}
                         modules={[Controller, Navigation, Pagination, Thumbs]}
                         // onSwiper={set => mainSliderRef.current = set}
                         // controller={{control: secondSliderRef.current}}
@@ -50,32 +51,27 @@ const MeasuresScreen: FC = () => {
                         // }}
                     >
                         <SwiperSlide>
-                            <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                            <img src="/images/photos/photo1.jfif" alt="Фото макета кухни"/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                            <img src="/images/photos/photo2.jfif" alt="Фото макета кухни"/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                            <img src="/images/photos/photo3.jfif" alt="Фото макета кухни"/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                            <img src="/images/photos/photo4.jfif" alt="Фото макета кухни"/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                            <img src="/images/photos/photo5.jfif" alt="Фото макета кухни"/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/images/photos/photo.png" alt="Фото комнаты"/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="/images/photos/photo.png" alt="Фото комнаты"/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                            <img src="/images/photos/photo6.jfif" alt="Фото макета кухни"/>
                         </SwiperSlide>
                     </SwiperComp>
                     <div className={styles.swiperWrapper}>
                         <SwiperComp
+                            loop={true}
                             modules={[Controller, Navigation, Thumbs]}
                             onSwiper={setSecondSwiper}
                             watchSlidesProgress
@@ -97,28 +93,22 @@ const MeasuresScreen: FC = () => {
                             // centeredSlides={true}
                         >
                             <SwiperSlide>
-                                <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                                <img src="/images/photos/photo1.jfif" alt="Фото макета кухни"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                                <img src="/images/photos/photo2.jfif" alt="Фото макета кухни"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                                <img src="/images/photos/photo3.jfif" alt="Фото макета кухни"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                                <img src="/images/photos/photo4.jfif" alt="Фото макета кухни"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                                <img src="/images/photos/photo5.jfif" alt="Фото макета кухни"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src="/images/photos/photo.png" alt="Фото комнаты"/>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img src="/images/photos/photo.png" alt="Фото комнаты"/>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img src="/images/photos/photo.png" alt="Фото комнаты"/>
+                                <img src="/images/photos/photo6.jfif" alt="Фото макета кухни"/>
                             </SwiperSlide>
                         </SwiperComp>
                         {/*<div className={`${styles.miniSwiperPrev} miniSwiperPrev`}></div>*/}
