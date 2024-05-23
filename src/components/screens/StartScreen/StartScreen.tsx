@@ -1,7 +1,6 @@
 'use client'
 import React, {FC, useRef, useState} from 'react';
 import styles from './StartScreen.module.scss';
-import Link from "next/link";
 import FormOrder from "@/components/UI/FormOrder/FormOrder";
 
 const StartScreen: FC = () => {
@@ -26,12 +25,8 @@ const StartScreen: FC = () => {
         }
     }
 
-    const onClick = () => {
-        // window.scrollTo(0, document.body.scrollHeight);
-    }
-
     return (
-        <section className={styles.startScreen}>
+        <section className={`${styles.startScreen} section`}>
             <div className={`${styles.modalForm} ${modalVisible ? 'modalVisible' : 'modalHidden'}`} ref={modalRef} onClick={(e) => modalClick(e)}>
                 <FormOrder isPopup={true} toggleModal={toggleModal} modalVisible={modalVisible} setModalVisible={setModalVisible}/>
             </div>

@@ -12,8 +12,6 @@ import {Controller, Navigation, Pagination, Thumbs} from "swiper/modules";
 const MeasuresScreen: FC = () => {
     const [firstSwiper, setFirstSwiper] = useState<Swiper | null>(null)
     const [secondSwiper, setSecondSwiper] = useState<Swiper | null>(null)
-    // const mainSliderRef = useRef<Swiper | null>(null);
-    // const secondSliderRef = useRef<Swiper | null>(null);
 
 
     return (
@@ -27,8 +25,6 @@ const MeasuresScreen: FC = () => {
                     <SwiperComp
                         loop={true}
                         modules={[Controller, Navigation, Pagination, Thumbs]}
-                        // onSwiper={set => mainSliderRef.current = set}
-                        // controller={{control: secondSliderRef.current}}
                         slidesPerView={1}
                         spaceBetween={10}
                         className='measures-slider'
@@ -42,13 +38,6 @@ const MeasuresScreen: FC = () => {
                         thumbs={{
                             swiper: '.measures-mini-slider'
                         }}
-
-                        // onSlideChange={(): void => {
-                        //     if (secondSliderRef.current && mainSliderRef.current) {
-                        //         console.log(mainSliderRef.current.activeIndex)
-                        //         secondSliderRef.current.slideTo(mainSliderRef.current.activeIndex);
-                        //     }
-                        // }}
                     >
                         <SwiperSlide>
                             <img src="/images/photos/photo1.jfif" alt="Фото макета кухни"/>
@@ -75,22 +64,9 @@ const MeasuresScreen: FC = () => {
                             modules={[Controller, Navigation, Thumbs]}
                             onSwiper={setSecondSwiper}
                             watchSlidesProgress
-                            // onSwiper={set => secondSliderRef.current = set}
-                            // controller={{control: mainSliderRef.current}}
                             slidesPerView={3}
                             spaceBetween={10}
                             className='measures-mini-slider'
-                            // navigation={{
-                            //     prevEl: '.miniSwiperPrev',
-                            //     nextEl: '.miniSwiperNext'
-                            // }}
-                            // onSlideChange={(): void => {
-                            //     if (mainSliderRef.current && secondSliderRef.current) {
-                            //         console.log(secondSliderRef.current.activeIndex)
-                            //         mainSliderRef.current.slideTo(secondSliderRef.current.activeIndex);
-                            //     }
-                            // }}
-                            // centeredSlides={true}
                         >
                             <SwiperSlide>
                                 <img src="/images/photos/photo1.jfif" alt="Фото макета кухни"/>
@@ -111,8 +87,6 @@ const MeasuresScreen: FC = () => {
                                 <img src="/images/photos/photo6.jfif" alt="Фото макета кухни"/>
                             </SwiperSlide>
                         </SwiperComp>
-                        {/*<div className={`${styles.miniSwiperPrev} miniSwiperPrev`}></div>*/}
-                        {/*<div className={`${styles.miniSwiperNext} miniSwiperNext`}></div>*/}
                     </div>
                 </div>
                 <div className={styles.measuresDescription}>

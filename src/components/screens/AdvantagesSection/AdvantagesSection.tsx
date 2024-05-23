@@ -9,52 +9,6 @@ import 'swiper/scss/pagination';
 import './SwiperStyles.scss';
 
 const AdvantagesSection: FC = () => {
-    // useEffect(() => {
-    //     const resizableSwiper = (breakpointIn: string, swiperClass: string, swiperSettings: SwiperOptions, callback?: (arg: object) => void) => {
-    //         let swiper:any;
-    //
-    //         const breakpoint = window.matchMedia(breakpointIn);
-    //
-    //         const enableSwiper = function(className: string, settings: SwiperOptions) {
-    //             swiper = new Swiper(className, settings);
-    //
-    //             if (callback) {
-    //                 callback(swiper);
-    //             }
-    //         }
-    //
-    //         const checker = function() {
-    //             if (breakpoint.matches) {
-    //                 return enableSwiper(swiperClass, swiperSettings);
-    //             } else {
-    //                 if (swiper !== undefined) swiper.destroy(true, true);
-    //                 return;
-    //             }
-    //         }
-    //
-    //         breakpoint.addEventListener('change', checker);
-    //         checker();
-    //     }
-    //
-    //     resizableSwiper(
-    //         '(max-width: 950px)',
-    //         '.advantagesSlider',
-    //         {
-    //             modules: [Pagination],
-    //             loop: false,
-    //             spaceBetween: 20,
-    //             slidesPerView: 'auto',
-    //             centeredSlides: true,
-    //             pagination: {
-    //                 el: '.swiper-pagination',
-    //                 type: 'bullets',
-    //                 clickable: true
-    //             },
-    //
-    //         }
-    //     )
-    // }, []);
-
     return (
         <section className={`${styles.advantagesSection} section`}>
             <h1 className={`${styles.advantagesTitle} titleNotoFont`}>
