@@ -1,5 +1,4 @@
 .formWrapper {
-  z-index: 5;
   position: relative;
 
   &.modal {
@@ -68,7 +67,7 @@
         top: 80%;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: 15px;
         background-image: url("../../../../public/images/form-text-mask.png");
         background-size: 100% auto;
         background-repeat: no-repeat;

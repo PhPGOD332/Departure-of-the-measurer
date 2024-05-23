@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useRef, useState} from 'react';
 import Header from "@/components/UI/Header/Header";
 import StartScreen from "@/components/screens/StartScreen/StartScreen";
 import MeasuresScreen from "@/components/screens/MeasurementsScreen/MeasuresScreen";
@@ -9,16 +9,15 @@ import FormOrderSection from "@/components/screens/FormOrderSection/FormOrderSec
 import Footer from "@/components/UI/Footer/Footer";
 
 const MeasurePage: FC = () => {
-
     return (
         <main className='measurePage'>
-            <Header />
-            <StartScreen />
-            <MeasuresScreen />
-            <VideoSection />
-            <PreparesSection />
-            <AlgorithmSection />
-            <FormOrderSection />
+           <Header/>
+            <StartScreen/>
+            <MeasuresScreen/>
+            <VideoSection/>
+            <PreparesSection/>
+            <AlgorithmSection/>
+            <FormOrderSection/>
             <Footer/>
         </main>
     );
